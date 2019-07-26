@@ -352,9 +352,10 @@ public class DialogUtils
 	}
 
 	//listview对话框
-	public ListView dialogl1(String title,final BaseAdapter badp){
+	public ListView dialogl1(String title,final BaseAdapter badp, int resid){
 
 		viewDialog=initDialog(context,R.layout.dialog_list);
+		viewDialog.setBackgroundResource(resid);
 		tv_title=(TextView)viewDialog.findViewById(R.id.tv_title);
 		ListView dl_list=(ListView)viewDialog.findViewById(R.id.dl_list);
 		initTitle(title);
