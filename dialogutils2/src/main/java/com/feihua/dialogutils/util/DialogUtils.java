@@ -645,8 +645,8 @@ public class DialogUtils
 	*底部滑出空白Dialog
 	*layoutId layout的id
 	*/
-	public View dialogBottomSheet(int layoutId){
-		builder = new BottomSheetDialog((Activity)context);
+	public View dialogBottomSheet(int layoutId, int style){
+		builder = new BottomSheetDialog((Activity)context,R.style.dialog);
 		View view = LayoutInflater.from(context).inflate(layoutId, null);
 		builder.setContentView(view);
 		builder.show();
